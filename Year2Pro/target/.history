@@ -1,0 +1,13 @@
+exit
+run
+activator clean compile
+clean
+exitr
+exit
+clean
+run
+clean
+run
+clean
+run
+exit

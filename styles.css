@@ -1,0 +1,151 @@
+.body_layout{
+		margin-left:auto;
+		margin-right: auto;
+		width:80%;
+		background-color:black;
+		color:white;
+		}
+		.bio::after {
+			content: "";
+  clear: right;
+  display: table;
+  margin-left:auto;
+		margin-right: auto;
+		width:80%;
+		}
+		.bio img{
+			float: right;
+		}
+		
+		
+body{
+		background-image: url("background.jpg");
+		}
+header img{
+		width:100%
+		}
+	
+		img{ max-width:100%;}
+
+		.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+		.gallery_box{ padding:0;display: flow-root;}
+		
+		.gallery_box li:hover img {
+			-moz-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		.gallery_box li img{-webkit-transition: transform 0.5s ease;
+			-o-transition: transform 0.5s ease;
+			transition: transform 0.5s ease;}
+		.gallery_box li:nth-child(even) {
+			height: 304px;
+		}
+		.gallery_box li:nth-child(odd) {
+			height: 438px; 
+		}
+		.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+		.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+		.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+		.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+		.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+		* {
+			box-sizing: border-box;
+		  }
+		  
+		  /* Position the image container (needed to position the left and right arrows) */
+		  .container {
+			position: relative;
+			width: 100%;
+		  }
+		  
+		  /* Hide the images by default */
+		  .mySlides {
+			display: none;
+			height: 50em;
+		  }
+
+		  .mySlides img{
+			  width:100%;
+			  height:100%
+		  }
+		  
+		  /* Add a pointer when hovering over the thumbnail images */
+		  .cursor {
+			cursor: pointer;
+		  }
+		  
+		  /* Next & previous buttons */
+		  .prev,
+		  .next {
+			cursor: pointer;
+			position: absolute;
+			top: 40%;
+			width: auto;
+			padding: 16px;
+			margin-top: -50px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			-webkit-user-select: none;
+		  }
+		  
+		  /* Position the "next button" to the right */
+		  .next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		  }
+		  
+		  /* On hover, add a black background color with a little bit see-through */
+		  .prev:hover,
+		  .next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		  }
+		  
+		  /* Number text (1/3 etc) */
+		  .numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		  }
+		  
+		  /* Container for image text */
+		  .caption-container {
+			text-align: center;
+			background-color: #222;
+			padding: 2px 16px;
+			color: white;
+		  }
+		  
+		  .row:after {
+			content: "";
+			display: table;
+			clear: both;
+		  }
+		  
+		  /* Six columns side by side */
+		  .column {
+			float: left;
+			width: 16.66%;
+		  }
+
+		  .column img{
+			  width: 100%;
+			  height: 100%;
+		  }
+		  
+		  /* Add a transparency effect for thumnbail images */
+		  .demo {
+			opacity: 0.6;
+		  }
+		  
+		  .active,
+		  .demo:hover {
+			opacity: 1;
+		  }
